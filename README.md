@@ -3,7 +3,7 @@ Arcade-Game for Udacity Frontend Nanodegree
 ## Frogger style arcade game using HTML, CSS, and JavaScript.
 
 ## Installation
-To play game locally clone this project repo and open the index.html file in your browser.
+To play this game locally clone this project repo and open the index.html file in your browser.
 
 ### Instructions || How to play
 Press the up, down, left and right arrow keys on your keyboard to move the player.
