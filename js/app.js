@@ -1,4 +1,4 @@
-
+use strict;
 let gameStart = false;
 // @initianilize colisions and score
 let colisions = 0;
@@ -13,7 +13,7 @@ const m_contentLoose = document.querySelector('.modal-content-loose');
 const btn = document.getElementById("myBtn");
 const btn1 = document.getElementById("myBtn1");
 const btn2 = document.getElementById("myBtn2");
-restartGame();
+initializeButtonHandlers();
 //start timer event listener
 document.getElementById("myBtn").addEventListener("click", startTimer);
 //-- modal control at start
@@ -38,8 +38,7 @@ let Enemy = function(x, y) {
     this.x = x;
     this.y = y;
     this.speedX = 2;
-    this.sprite = 'images/enemy-bug.png';
-    this.update();
+    this.sprite = 'images/enemy-bug.png';    
 };
 
 // Update the enemy's position, required method for game
@@ -109,9 +108,7 @@ let Player = function () {
     // a helper we've provided to easily load images
     this.x = 300;
     this.y = 400;
-    this.sprite = 'images/char-boy.png';
-    this.update();
-    this.handleInput();
+    this.sprite = 'images/char-boy.png';   
 };
 
 
@@ -168,7 +165,7 @@ document.addEventListener('keyup', function(e) {
 });
 
 // -- Restart game
-function restartGame() {  
+function initializeButtonHandlers() {  
    btn.onclick = () => {
         gameStart = true;
         modal.style.display = "none";
