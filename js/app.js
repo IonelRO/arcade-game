@@ -1,4 +1,3 @@
-use strict;
 let gameStart = false;
 // @initianilize colisions and score
 let colisions = 0;
